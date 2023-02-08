@@ -18,28 +18,83 @@ else:
 
 print("So {} you have to pick between a cop or a robber" .format(name))
 
+
+
 character = input("")
 
-while(character != "cop" or "robber"):
-        if (character =="cop"):
+def ChoosingCharacter():
+ flag = True
+ while flag:
+        if (character == "cop"):
           print("Here are the benefits of being a cop")
-          print(Role1.cop())
-          break
-      
-      
+          Role1.cop()
+          flag  = False
+          
         elif (character == "robber"):
               print("Here are the benefits of being the robber") 
-              print(Role2.RoleNumero2.robber())
-              break
+              print(Role2.robber())
+              flag = False
+              
         else: 
           print("Invalid Statement")
-          break
+          flag = False
+ChoosingCharacter()       
   
-   
-   
-x = Game.diceThrown()  
+
+
+ 
+def chracterchosen():
         
-if (character == "cop"):
-  print("Stage one")
-  print(x)
+  if (character == "cop"):
+    print("Your fight is against the robber you fight for justice")
+  elif(character=="robber"):
+    print("Your fight is against the cop your one fight away from freedom")
+chracterchosen()
+
+
   
+while True:
+    age=input('Enter yes to roll again ')
+    if age== ('yes'):
+        break
+    else:
+        print('invalid')
+
+def Stage1():
+  
+  if(character == "cop"):
+    print(Game.diceThrown())
+    #print("1")
+  elif(character == "robber"):
+    print(Game.diceThrown())
+    #print("2")
+    
+while True:
+    age=input('Enter yes to roll again ')
+    if age== ('yes'):
+        break
+    else:
+        print('invalid')
+        
+def Stage2():
+  if(character == "cop"):
+    print(Game.diceThrown())
+    #print("3")
+  elif(character == "robber"):
+    print(Game.diceThrown())
+    #print("4")
+    
+  while True:
+    age=input('Enter yes to roll again ')
+    if age== ('yes'):
+        break
+    else:
+        print('invalid')
+        
+def Stage3():
+  if(character == "cop"):
+    print(Game.diceThrown())
+    #print("5")
+  elif(character == "robber"):
+    print(Game.diceThrown())
+    #print("6")

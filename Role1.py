@@ -1,24 +1,19 @@
 #Implements the data and logic associated with the first role
-'''
-def cop(Strength): 
-        
-        BattleExp = 3
-        Influence = 3 
-        print(Strength)
-cop(3)
-
-def gt(): 
-        Strength = 3
-        BattleExp = 3
-        Influence = 3 
-        print(Strength)
-gt()'''
-
+import Game
+Strength = 0
+Health = 0 
+Intelligence = 0 
 
 def cop():
-        Strength = 3
+        global Strength 
+        Strength=3
+        global Health
         Health = 3
+        global Intelligence
         Intelligence = 1
-        print("Cops Attributes=","Strength=",Strength,"Health=",Health,"Intelligence=",Intelligence)
-        
+        print("Cop's Attributes:","Strength=",Strength,"Health=",Health,"Intelligence=",Intelligence)
+        Game.role1_health
+        Game.role1_intelligence
+        Game.role1_Strength
+
         
