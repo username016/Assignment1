@@ -27,12 +27,14 @@ def ChoosingCharacter():
  while flag:
         if (character == "cop"):
           print("Here are the benefits of being a cop")
-          Role1.cop()
+          global cop 
+          cop = Role1.cop()
           flag  = False
           
         elif (character == "robber"):
               print("Here are the benefits of being the robber") 
-              print(Role2.robber())
+              global robber
+              robber = print(Role2.robber())
               flag = False
               
         else: 
